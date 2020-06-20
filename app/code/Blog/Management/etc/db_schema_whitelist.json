@@ -1,0 +1,14 @@
+{
+    "requested_author": {
+        "column": {
+            "id": true,
+            "a_name": true,
+            "a_email": true,
+            "blog_name": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

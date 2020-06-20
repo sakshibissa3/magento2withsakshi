@@ -1,0 +1,11 @@
+{{template config_path="design/email/header_template"}}
+ 
+<p>{{trans "Hi "}} {{var data.a_name}},</p>
+<p>
+{{trans "Thank You for Registering,"}}
+{{trans "We will send You Link along with the Password for you to log in. Stay connected for updates."}}
+</p>
+ 
+{{var store.getFrontendName()}}
+{{template config_path="design/email/footer_template"}}
+ 

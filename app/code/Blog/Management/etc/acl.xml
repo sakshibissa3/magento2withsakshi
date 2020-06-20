@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+
+  <acl>
+
+    <resources>
+
+       <resource id="Magento_Backend::admin">
+
+          <resource id="Blog_Management::blog" title="Blog" sortOrder="10" >
+
+          <resource id="Blog_Management::bloggers" title="Bloggers" sortOrder="10" >
+                    
+         <resource id="Blog_Management::addpost" title="Addpost" sortOrder="10" >
+
+</resource>
+         </resource>
+
+         </resource>
+
+       </resource>
+
+    </resources>
+
+  </acl>
+
+</config>

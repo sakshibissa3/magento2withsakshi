@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../Magento/Email/etc/email_templates.xsd">
+   <template id="custom_module_email_template" label="custom_module_email_template" file="custom_email.html" type="html" module="Blog_Management" area="frontend" />
+      <template id="login_credential_template" label="login_credential_generator_template" file="login_email.html" type="html" module="Blog_Management" area="frontend" />
+
+</config>

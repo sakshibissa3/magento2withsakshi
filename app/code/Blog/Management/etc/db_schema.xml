@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="requested_author" resource="default" engine="innodb" comment="Requested Author">
+        <column xsi:type="smallint" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="a_name" nullable="false" length="25" comment="Name"/>
+        <column xsi:type="varchar" name="a_email" nullable="false" length="25" comment="Email"/>
+        <column xsi:type="varchar" name="blog_name" nullable="false" length="255" comment="Descrition"/>
+       <column xsi:type="varchar" name="status" nullable="false" length="255" comment="Status"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

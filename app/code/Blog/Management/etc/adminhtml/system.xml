@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+
+   <system>
+
+       <tab id="customtab" translate="label" sortOrder="10"> <!--Declaration of Tab-->
+
+           <label>Custom Config Tab</label> <!--Lable for Tab-->
+
+       </tab>
+
+      <section id="customsection" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1"> <!--Declaration of Section-->
+
+           <label>Custom Configuration Section</label> <!--Lable for Section-->
+
+           <tab>customtab</tab> <!--Define tab id in which you are creating a section-->
+
+           <resource>Custom_Module::config</resource> <!--ACL resource id-->
+         
+           <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0"> <!--Declaration of group-->
+
+               <label>General Configuration</label> <!--Label for group-->
+
+               <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0"> <!--Declaration of field-->
+
+                   <label>Enable</label> <!--Label for field-->
+
+                   <source_model>Magento\Config\Model\Config\Source\Yesno</source_model> <!--Define the source model from where you'll get data-->
+
+               </field>
+
+           </group>
+
+       </section>
+   </system>
+
+</config>
+
