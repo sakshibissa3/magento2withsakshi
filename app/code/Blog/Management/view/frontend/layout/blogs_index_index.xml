@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page>
+    <body>
+    <referenceContainer name="content">
+       <block name="example-view-model" class="Magento\Framework\View\Element\Template" template="Blog_Management::display.phtml">
+    <arguments>
+        <argument name="view_model" xsi:type="object">Blog\Management\ViewModel\Testviewmodel</argument>
+    </arguments>
+</block>
+</referenceContainer>
+    </body>
+</page>

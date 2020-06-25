@@ -107,17 +107,7 @@
                 </item>
             </argument>
         </column>
-         <selectionsColumn name="tick">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                                   <item name="component" xsi:type="string">Blog\Management\Ui\Component\Listing\Columns\Sendmail</item>
-
-                    <item name="resizeEnabled" xsi:type="boolean">false</item>
-                    <item name="resizeDefaultWidth" xsi:type="string">55</item>
-                    <item name="indexField" xsi:type="string">accept</item>
-                </item>
-            </argument>
-        </selectionsColumn>
+        
          <actionsColumn name="send_mail" class="Blog\Management\Ui\Component\Listing\Columns\Sendmail">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

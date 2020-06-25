@@ -81,6 +81,6 @@ class OrdersTest extends \PHPUnit\Framework\TestCase
      */
     public function testToHtml()
     {
-        $this->assertContains("We couldn't find any records.", $this->block->toHtml());
+        $this->assertContains("yessssssWe couldn't find any records.", $this->block->toHtml());
     }
 }
